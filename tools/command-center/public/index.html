@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#04080a">
+    <title>REGALIA//89 // ArtistOS 3033</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/artistos-wrapper.css">
+  </head>
+  <body data-locked="true">
+    <section class="access-gate" id="access-gate" aria-labelledby="access-title">
+      <div class="access-card glass-panel">
+        <div class="access-sigil" aria-hidden="true">
+          <span>89</span>
+          <i></i>
+        </div>
+        <p class="eyebrow">REGALIA//89 // ARTIST SIGNAL</p>
+        <h1 id="access-title">Enter ArtistOS</h1>
+        <p>The instruments stay behind one owned interface. Enter the collaborator passcode to connect.</p>
+        <form class="access-form" id="access-form">
+          <label for="access-passcode">Passcode</label>
+          <div>
+            <input id="access-passcode" name="passcode" type="password" autocomplete="current-password" required maxlength="256" autofocus>
+            <button class="button primary" type="submit">Enter system</button>
+          </div>
+          <p class="access-error" id="access-error" role="alert" aria-live="assertive"></p>
+        </form>
+        <div class="access-boundary"><i></i><span>PRIVATE SESSION // EXPLICIT ACTIONS ONLY</span></div>
+        <p class="access-local-note">Local-open mode skips this gate. Website mode requires HTTPS and a server-side passcode.</p>
+      </div>
+    </section>
+    <a class="skip-link" href="#app">Skip to workspace view</a>
+    <div class="ambient-field" aria-hidden="true"><i></i><i></i><i></i></div>
+    <div class="noise" aria-hidden="true"></div>
+    <div class="shell">
+      <aside class="rail">
+        <div class="identity">
+          <div class="sigil-wrap">
+            <span id="identity-sigil" class="identity-sigil-code" aria-label="REGALIA 89">89</span>
+          </div>
+          <div>
+            <p class="eyebrow">ARTISTOS // ERA 3033</p>
+            <h1>REGALIA<span>//89</span></h1>
+            <p class="subhead">COMMAND ENVIRONMENT</p>
+          </div>
+        </div>
+
+        <nav aria-label="Command Center sections">
+          <p class="nav-group-label">QUANTUM QUIL</p>
+          <button class="nav-button wavid-nav active" data-view="incubator"><span>00</span> QUIL <em>CORE</em></button>
+          <p class="nav-group-label">ARTIST OPERATIONS</p>
+          <button class="nav-button" data-view="tools"><span>01</span> Creative Studio <b id="nav-tools-count">0</b></button>
+          <button class="nav-button" data-view="overview"><span>02</span> Overview</button>
+          <button class="nav-button" data-view="journey"><span>03</span> Release Journey</button>
+          <button class="nav-button" data-view="music"><span>04</span> Music Lab <b id="nav-music-count">0</b></button>
+          <button class="nav-button" data-view="approvals"><span>05</span> Approvals <b id="nav-approval-count">0</b></button>
+          <button class="nav-button" data-view="publishing"><span>06</span> Content Pipeline</button>
+          <button class="nav-button" data-view="metrics"><span>07</span> Metrics</button>
+          <button class="nav-button" data-view="gallery"><span>08</span> Content Gallery</button>
+        </nav>
+
+        <div class="rail-footer">
+          <div class="local-lock"><i></i><span id="access-mode-label">PRIVATE // SESSION ARMED</span></div>
+          <p id="access-mode-detail">First-party interface.<br>No autonomous public actions.</p>
+        </div>
+      </aside>
+
+      <main>
+        <header class="topbar">
+          <div>
+            <p class="eyebrow" id="view-code">QUANTUM QUIL // 00</p>
+            <h2 id="view-title">QUIL // Artist WavID</h2>
+          </div>
+          <div class="top-status">
+            <label class="theme-control" for="theme-select">
+              <span>PHOSPHOR MOOD</span>
+              <select id="theme-select" aria-describedby="theme-source">
+                <option value="auto">WavID Auto</option>
+                <option value="aqua">Aqua Signal</option>
+                <option value="ultraviolet">Ultraviolet</option>
+                <option value="amber">Solar Amber</option>
+                <option value="rose">Rose Circuit</option>
+                <option value="ice">Cryo Ice</option>
+              </select>
+              <small id="theme-source">LOCAL PRESET</small>
+            </label>
+            <div class="mood-orb" id="mood-orb" aria-hidden="true"><i></i></div>
+            <div class="session-control">
+              <span class="session-badge" id="session-badge">PRIVATE</span>
+              <button class="small-button" id="session-logout" type="button" hidden>Lock session</button>
+            </div>
+            <div class="system-time"><div class="signal"><i></i> WORKSPACE LINKED</div><time id="clock">--:--:--</time></div>
+          </div>
+        </header>
+
+        <div id="notice" class="notice" role="status" aria-live="polite"></div>
+        <section id="app" aria-live="polite">
+          <div class="loading-panel">
+            <div class="loader"></div>
+            <p>SYNCING CANONICAL RECORDS</p>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <dialog id="form-dialog" aria-labelledby="dialog-title">
+      <form method="dialog" id="dialog-form">
+        <div class="dialog-head">
+          <div>
+            <p class="eyebrow" id="dialog-code">NEW RECORD</p>
+            <h3 id="dialog-title">Add item</h3>
+          </div>
+          <button class="icon-button" value="cancel" aria-label="Close">×</button>
+        </div>
+        <div id="dialog-fields"></div>
+        <div class="dialog-actions">
+          <button class="button ghost" value="cancel">Cancel</button>
+          <button class="button primary" id="dialog-submit" value="default">Save record</button>
+        </div>
+      </form>
+    </dialog>
+
+    <dialog id="confirm-dialog" class="confirm-dialog" aria-labelledby="confirm-title" aria-describedby="confirm-message confirm-boundary">
+      <form method="dialog" id="confirm-form">
+        <div class="confirm-signal" aria-hidden="true"><i></i><span>89</span></div>
+        <p class="eyebrow" id="confirm-code">CONFIRM ACTION</p>
+        <h3 id="confirm-title">Continue?</h3>
+        <p id="confirm-message"></p>
+        <div class="confirm-boundary"><i></i><span id="confirm-boundary">Local operation</span></div>
+        <div class="dialog-actions">
+          <button class="button ghost" value="cancel" id="confirm-cancel">Cancel</button>
+          <button class="button primary" value="confirm" id="confirm-accept">Confirm</button>
+        </div>
+      </form>
+    </dialog>
+
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>

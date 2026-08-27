@@ -1,0 +1,15 @@
+{
+  "name": "artist-os",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "doctor": "npm --prefix tools/command-center run doctor",
+    "test": "npm --prefix tools/command-center test",
+    "check:public": "node scripts/check-public-release.mjs",
+    "check": "npm run check:public && npm run doctor && npm test"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

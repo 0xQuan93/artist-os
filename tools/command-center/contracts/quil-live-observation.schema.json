@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://artistos.local/contracts/quil-live-observation.schema.json",
+  "title": "QUIL LIVE Observation",
+  "description": "A bounded, provenance-labeled live observation for a WavForm. It cannot mutate frozen identity or approval state.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "effect",
+    "eventId",
+    "sequence",
+    "observedAt",
+    "source",
+    "subject",
+    "signals",
+    "provenance"
+  ],
+  "properties": {
+    "schema": { "const": "quil-live-observation/1.0" },
+    "effect": { "const": "observation-only" },
+    "eventId": { "$ref": "#/$defs/safeId" },
+    "sequence": { "type": "integer", "minimum": 0 },
+    "observedAt": { "type": "string", "format": "date-time" },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "label", "kind"],
+      "properties": {
+        "id": { "$ref": "#/$defs/safeId" },
+        "label": { "type": "string", "minLength": 1, "maxLength": 96 },
+        "kind": { "enum": ["wavewarz", "stream", "venue", "sensor", "social", "custom"] }
+      }
+    },
+    "subject": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "id"],
+      "properties": {
+        "kind": { "enum": ["artist-wavid", "genesis-wavform"] },
+        "id": { "$ref": "#/$defs/safeId" },
+        "bindingSha256": {
+          "type": ["string", "null"],
+          "pattern": "^[A-Fa-f0-9]{64}$"
+        }
+      }
+    },
+    "signals": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 16,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["channel", "value", "semantic"],
+        "properties": {
+          "channel": { "type": "string", "pattern": "^[a-z][a-z0-9._-]{0,47}$" },
+          "value": { "type": "number", "minimum": 0, "maximum": 1 },
+          "confidence": { "type": "number", "minimum": 0, "maximum": 1, "default": 1 },
+          "semantic": { "type": "string", "minLength": 1, "maxLength": 160 }
+        }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["retrieval"],
+      "properties": {
+        "retrieval": { "enum": ["push", "poll", "webhook", "local"] },
+        "uri": { "type": ["string", "null"], "format": "uri", "pattern": "^https?://" },
+        "recordId": { "type": ["string", "null"], "minLength": 1, "maxLength": 128 }
+      }
+    }
+  },
+  "$defs": {
+    "safeId": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 180,
+      "pattern": "^[a-zA-Z0-9][a-zA-Z0-9:._-]*$"
+    }
+  }
+}

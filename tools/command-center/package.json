@@ -1,0 +1,14 @@
+{
+  "name": "artistos-command-center",
+  "version": "1.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "doctor": "node doctor.mjs",
+    "start": "node server.mjs",
+    "test": "node --test test/access-control.test.mjs test/asset-forge-security.test.mjs test/content-gallery.test.mjs test/creative-tools.test.mjs test/first-party-ui.test.mjs test/music-maker.test.mjs test/music-review-utils.test.mjs test/phosphor-theme.test.mjs test/portable-core.test.mjs test/postiz-adapter.test.mjs test/quil-live.test.mjs test/server-access.test.mjs test/wavforms-anatomy-ui.test.mjs test/wavforms-nursery.test.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

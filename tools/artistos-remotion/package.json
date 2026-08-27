@@ -1,0 +1,24 @@
+{
+  "name": "artistos-remotion",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "studio": "remotion studio src/asset-forge-entry.ts",
+    "build": "remotion bundle src/asset-forge-entry.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/bundler": "4.0.515",
+    "@remotion/cli": "4.0.515",
+    "@remotion/renderer": "4.0.515",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "4.0.515"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "typescript": "^5.5.0"
+  }
+}
