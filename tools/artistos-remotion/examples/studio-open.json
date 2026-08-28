@@ -1,0 +1,21 @@
+{
+  "projectId": "readme-studio-open",
+  "title": "Studio Open",
+  "template": "announcement",
+  "outputKind": "still",
+  "format": "landscape",
+  "width": 960,
+  "height": 540,
+  "fps": 30,
+  "durationSeconds": 8,
+  "eyebrow": "REGALIA//89 // OPEN CHANNEL",
+  "headline": "YOUR TOOLS. ONE WORLD.",
+  "subheadline": "Music, visuals, assets, and review without leaving ArtistOS.",
+  "body": "Optional engines stay private behind the first-party interface.",
+  "cta": "ENTER ARTISTOS",
+  "backgroundPath": "",
+  "backgroundAsset": "",
+  "backgroundColor": "#031010",
+  "accentColor": "#76F7E5",
+  "textColor": "#EFFFFC"
+}

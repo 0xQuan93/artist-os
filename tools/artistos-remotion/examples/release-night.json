@@ -1,0 +1,21 @@
+{
+  "projectId": "readme-release-night",
+  "title": "Release Night",
+  "template": "event-poster",
+  "outputKind": "still",
+  "format": "portrait",
+  "width": 720,
+  "height": 900,
+  "fps": 30,
+  "durationSeconds": 8,
+  "eyebrow": "ARTISTOS // RELEASE SIGNAL",
+  "headline": "THE RECORD IS READY",
+  "subheadline": "A human decision. A deliberate release.",
+  "body": "Built, reviewed, and packaged inside one artist-owned command environment.",
+  "cta": "FOLLOW THE SIGNAL",
+  "backgroundPath": "",
+  "backgroundAsset": "",
+  "backgroundColor": "#06040B",
+  "accentColor": "#B891FF",
+  "textColor": "#F7F2FF"
+}
