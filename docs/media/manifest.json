@@ -1,0 +1,64 @@
+{
+  "schema": "artistos-documentation-media/1.0",
+  "generatedOn": "2026-08-27",
+  "status": "documentation-example-not-artist-approval",
+  "engine": {
+    "name": "Remotion",
+    "version": "4.0.515",
+    "entryPoint": "tools/artistos-remotion/src/asset-forge-entry.ts",
+    "command": "npm --prefix tools/artistos-remotion run render:readme"
+  },
+  "artifacts": [
+    {
+      "file": "artistos-hero.png",
+      "composition": "ArtistOsRepositoryShowcase",
+      "frame": 72,
+      "width": 1200,
+      "height": 630,
+      "frames": 1,
+      "bytes": 634196,
+      "sha256": "f36f202b649366011502f89e48e20dade3d63fa397a622089b13215b88a6bb89"
+    },
+    {
+      "file": "artistos-showcase.gif",
+      "composition": "ArtistOsRepositoryShowcase",
+      "sourceFps": 30,
+      "everyNthFrame": 3,
+      "width": 720,
+      "height": 378,
+      "frames": 50,
+      "bytes": 4613033,
+      "sha256": "d468eaf7a38f341aab1182be7a2259db2f4f41be607f4a748b41f50b66949959"
+    },
+    {
+      "file": "example-release-night.png",
+      "composition": "QuilAssetForgeVisual",
+      "props": "tools/artistos-remotion/examples/release-night.json",
+      "width": 720,
+      "height": 900,
+      "frames": 1,
+      "bytes": 423235,
+      "sha256": "eb771ad3768a8cf778af736d739f405644f04681facc38fb9a7ab25b013ed87d"
+    },
+    {
+      "file": "example-midnight-transmission.png",
+      "composition": "QuilAssetForgeVisual",
+      "props": "tools/artistos-remotion/examples/midnight-transmission.json",
+      "width": 720,
+      "height": 720,
+      "frames": 1,
+      "bytes": 357949,
+      "sha256": "3fca322bf99f611d4022ef8083fa113a372f85c927a72b0dfe867c51691f8bbb"
+    },
+    {
+      "file": "example-studio-open.png",
+      "composition": "QuilAssetForgeVisual",
+      "props": "tools/artistos-remotion/examples/studio-open.json",
+      "width": 960,
+      "height": 540,
+      "frames": 1,
+      "bytes": 337867,
+      "sha256": "d9974c84d7cd0bae7f3dc42b3dc2708c8664cb85cd1f3624b56e55d169d1023e"
+    }
+  ]
+}

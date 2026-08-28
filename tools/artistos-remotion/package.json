@@ -6,7 +6,8 @@
   "scripts": {
     "studio": "remotion studio src/asset-forge-entry.ts",
     "build": "remotion bundle src/asset-forge-entry.ts",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "render:readme": "node scripts/render-readme-showcase.mjs"
   },
   "dependencies": {
     "@remotion/bundler": "4.0.515",

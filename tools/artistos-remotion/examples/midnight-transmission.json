@@ -1,0 +1,21 @@
+{
+  "projectId": "readme-midnight-transmission",
+  "title": "Midnight Transmission",
+  "template": "cover-card",
+  "outputKind": "still",
+  "format": "square",
+  "width": 720,
+  "height": 720,
+  "fps": 30,
+  "durationSeconds": 8,
+  "eyebrow": "QUIL // TRANSMISSION 089",
+  "headline": "MAKE THE SIGNAL YOURS",
+  "subheadline": "Local tools. Artist authority.",
+  "body": "A deterministic visual built from an editable blueprint.",
+  "cta": "BUILD // CREATE",
+  "backgroundPath": "",
+  "backgroundAsset": "",
+  "backgroundColor": "#090704",
+  "accentColor": "#F0B45A",
+  "textColor": "#FFF7E8"
+}

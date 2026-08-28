@@ -6,6 +6,7 @@
 **/*.py[cod]
 **/.cache/
 **/build/
+**/out/
 **/.remotion/
 **/*.log
 catalog/operations/
@@ -23,6 +24,10 @@ tools/artistos-remotion/jobs/
 *.jpeg
 *.webp
 *.gif
+!docs/
+!docs/media/
+!docs/media/*.png
+!docs/media/*.gif
 *.pem
 *.pfx
 *.key
